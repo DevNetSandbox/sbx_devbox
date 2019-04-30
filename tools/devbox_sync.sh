@@ -5,7 +5,7 @@
 # updates and changes to maintain the latest requirements and tools.
 
 # The "SYNC_VERSION" is used to determine whether any pod updates are needed
-SYNC_VERSION=7
+SYNC_VERSION=8
 
 # Step 1. Check to see if script needs to run.  If not, exit.
 CURRENT_VERSION=$(<~/sync_version)
@@ -27,6 +27,9 @@ sudo pip install virlutils==0.8.4
 
 # somebody will still want telnet
 sudo yum install -y telnet
+
+# install docker-compose
+sudo pip install docker-compose
 
 # disable firewalld
 sudo systemctl stop firewalld
