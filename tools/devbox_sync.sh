@@ -28,6 +28,9 @@ sudo pip install virlutils==0.8.8
 # somebody will still want telnet
 sudo yum install -y telnet
 
+# install docker-compose
+sudo pip install docker-compose
+
 # disable firewalld
 sudo systemctl stop firewalld
 sudo systemctl disable firewalld
